@@ -8,6 +8,8 @@
     <title>EDULEARN</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
     <link rel="stylesheet" href="sass/style.css">
 </head>
 
@@ -70,36 +72,126 @@
             </div>
         </nav>
         <nav id="nav-main">
-            <div class="container navbars">
+            <div class="container navbarmenu">
                 <ul>
-                    <li class="dropdown"><a href="#">HOME</a>
+                    <li class="dropdown"><a class="active" href="#">HOME</a>
                         <ul class="ul-dropdown">
-                          <li><a href="#">Home</a></li>
-                          <li><a href="#">Home</a></li>
-                          <li><a href="#">Home</a></li>
-                          <li><a href="#">Home</a></li>
-                          <li><a href="#">Home</a></li>
-                          <li><a href="#">Home</a></li>
+                            <li><a class="subactive" href="#">Home One</a></li>
+                            <li><a href="#">Home Two</a></li>
+                            <li><a href="#">Home Three</a></li>
+                            <li><a href="#">Home Three</a></li>
+                            <li><a href="#">Home Five</a></li>
+                            <li><a href="#">Home Instructor</a></li>
                         </ul>
                     </li>
-                    <li><a href="">ABOUT US</a></li>
-                    <li><a href="">MEGA</a></li>
-                    <li><a href="">COURSES</a></li>
-                    <li><a href="">EVENTS</a></li>
-                    <li><a href="">PAGES</a> </li>
-                    <li><a href="">BLOG</a> </li>
-                    <li><a href="">CONTACT</a></li>
+                    <li class="dropdown"><a href="">ABOUT US</a>
+                        <ul class="ul-dropdown">
+                            <li><a href="#">About One</a></li>
+                            <li><a href="#">About Two</a></li>
+                            <li><a href="#">About Three</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="">MEGA</a>
+                        <ul class="ul-dropdownmega">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <li><a href="#">About One</a></li>
+                                    <li><a href="#">About Two</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">Blog Details</a></li>
+                                </div>
+                                <div class="col-md-3">
+                                    <li><a href="#">Teachers</a></li>
+                                    <li><a href="#">Teachers Without Filter</a></li>
+                                    <li><a href="#">Teachers Single</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                </div>
+                                <div class="col-md-3">
+                                    <li><a href="#">Gallery One</a></li>
+                                    <li><a href="#">Gallery Two</a></li>
+                                    <li><a href="#">Gallery Three</a></li>
+                                    <li><a href="#">Error 404</a></li>
+                                </div>
+                                <div class="col-md-3">
+                                    <li><a href="#">Shop</a></li>
+                                    <li><a href="#">Shop Details</a></li>
+                                    <li><a href="#">Cart</a></li>
+                                    <li><a href="#">Checkout</a></li>
+                                </div>
+                            </div>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="">COURSES</a>
+                        <ul class="ul-dropdown">
+                            <li><a href="#">Courses One</a></li>
+                            <li><a href="#">Courses Two</a></li>
+                            <li><a href="#">Courses Details</a></li>
+                            <li><a href="#">Courses Details 2</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="">EVENTS</a>
+                        <ul class="ul-dropdown">
+                            <li><a href="#">Events</a></li>
+                            <li><a href="#">Events Details</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="">PAGES</a>
+                        <ul class="ul-dropdown">
+                            <li><a href="#">Teachers</a></li>
+                            <li><a href="#">Gallery</a></li>
+                            <li><a href="#">Shop</a></li>
+                            <li><a href="#">Cart</a></li>
+                            <li><a href="#">Checkout</a></li>
+                            <li><a href="#">Error 404</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="">BLOG</a>
+                        <ul class="ul-dropdown">
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Blog Details</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="contacthover" href="#">CONTACT</a></li>
                 </ul>
-                <div>
-                    <i class="far fa-search"></i>
-                    <i class="far fa-bars"></i>
+                <div class="item-icons">
+                    <a href="#"><i class="far fa-search"></i></a>
+                    <a href="#" id="hamburgermenu"><i class="far fa-bars"></i></a>
                 </div>
             </div>
         </nav>
+        <div id="sidenavigation" class="sidenavigationforsass">
+            <a href="#" class="closesidenav">&times;</a>
+            <a href="#"><img src="images/LOGOWHITE.png" alt="logo"></a>
+            <button class="accordion-edulearn">Home</button>
+            <div class="panel-edulearn">
+                <p>Home One</p>
+                <p>Home Two</p>
+                <p>Home Three</p>
+            </div>
+
+            <button class="accordion-edulearn">About Us</button>
+            <div class="panel-edulearn">
+                <p>About One</p>
+                <p>About Two</p>
+                <p>About Three</p>
+            </div>
+
+            <button class="accordion-edulearn">Pages</button>
+            <div class="panel-edulearn">
+                <p>Teachers</p>
+                <p>Teachers Without Filter</p>
+                <p>Teachers Single</p>
+            </div>
+        </div>
     </header>
     <main>
         <section id="section-getstarted">
-
+            <div class="autoplay">
+                <div><img src="images/slide1.jpg" alt="image"></div>
+                <div><img src="images/slide2.jpg" alt="image2"></div>
+                <div><img src="images/slide3.jpg" alt="image3"></div>
+            </div>
         </section>
         <section id="section-services">
 
@@ -108,7 +200,10 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-
+                        <div class="item-title">
+                            <h2 class="item-aboutus">ABOUT US</h2>
+                            <p>Fusce sem dolor, interdum in fficitur at, faucibus nec lorem. Sed nec molestie justo.</p>
+                        </div>
                     </div>
                 </div>
                 <div class="row">
@@ -225,6 +320,10 @@
             </div>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/slickofproject.js"></script>
     <script src="https://kit.fontawesome.com/f28891363d.js"></script>
     <script src="scripts/fontawesome.js"></script>
 </body>
