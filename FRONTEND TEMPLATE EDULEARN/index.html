@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>EDULEARN</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <link rel="stylesheet" href="slick/slick.css" />
+    <link rel="stylesheet" href="slick/slick-theme.css" />
     <link rel="stylesheet" href="sass/style.css">
 </head>
 
@@ -188,9 +188,9 @@
     <main>
         <section id="section-getstarted">
             <div class="autoplay">
-                <div><img src="images/slide1.jpg" alt="image"></div>
-                <div><img src="images/slide2.jpg" alt="image2"></div>
-                <div><img src="images/slide3.jpg" alt="image3"></div>
+                <div><img src="images/slide1.jpg" alt="image" width="1349" height="576.13"></div>
+                <div><img src="images/slide2.jpg" alt="image2" width="1349" height="576.13"></div>
+                <div><img src="images/slide3.jpg" alt="image3" width="1349" height="576.13"></div>
             </div>
         </section>
         <section id="section-services">
@@ -198,21 +198,49 @@
         </section>
         <section id="section-aboutus">
             <div class="container">
+                <div class="item-title">
+                    <h2>ABOUT US</h2>
+                    <p>Fusce sem dolor, interdum in fficitur at, faucibus nec lorem. Sed nec molestie justo.</p>
+                    <hr>
+                </div>
                 <div class="row">
-                    <div class="col-md-12">
-                        <div class="item-title">
-                            <h2 class="item-aboutus">ABOUT US</h2>
-                            <p>Fusce sem dolor, interdum in fficitur at, faucibus nec lorem. Sed nec molestie justo.</p>
+                    <div class="col-md-6">
+                        <div class="items-youtube">
+                            <img src="images/about.jpg" alt="about">
+                            <a href=""><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 items-all">
+                        <div class="items-text">
+                            <h3>WELCOME TO EDULEARN</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                        </div>
+                        <button class="accordion-aboutus">Our History</button>
+                        <div class="panel-aboutus">
+                            <p>There are many variations of passages of Lorem Ipsum available,
+                                but the majority have suffered alteration in some form, by injected humour,
+                                or randomised words which don't look even slightly believable.</p>
+                        </div>
+
+                        <button class="accordion-aboutus">Our Mission</button>
+                        <div class="panel-aboutus">
+                            <p>There are many variations of passages of Lorem Ipsum available,
+                                but the majority have suffered alteration in some form, by injected humour,
+                                or randomised words which don't look even slightly believable.</p>
+                        </div>
+
+                        <button class="accordion-aboutus">Our Vision</button>
+                        <div class="panel-aboutus">
+                            <p>There are many variations of passages of Lorem Ipsum available,
+                                but the majority have suffered alteration in some form, by injected humour,
+                                or randomised words which don't look even slightly believable.</p>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-6"></div>
-                    <div class="col-md-6"></div>
-                </div>
             </div>
         </section>
-        <section id="ourpopularcourses">
+        <section id="section-ourpopularcourses">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12"></div>
@@ -227,15 +255,48 @@
         <section id="section-acheivements">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6"></div>
                     <div class="col-md-6">
+                        <div class="items-content">
+                            <h2 class="item-title">ACHEIVEMENTS</h2>
+                            <div class="item-text">
+                                <p>
+                                    A wonderful serenity has taken possession of my entire soul,
+                                    like these sweet mornings of spring which I enjoy with my whole heart like mine.
+                                </p>
+                            </div>
+                            <div class="item-image">
+                                <img src="images/counter 1.jpg" alt="itisimage">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 counterboxes">
                         <div class="row">
-                            <div class="col-md-6"></div>
-                            <div class="col-md-6"></div>
+                            <div class="col-md-6">
+                                <div class="items-list">
+                                    <h2 class="item-number">60</h2>
+                                    <h4 class="item-word">TEACHERS</h4>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="items-list">
+                                    <h2 class="item-number">40</h2>
+                                    <h4 class="item-word">COURSES</h4>
+                                </div>
+                            </div>
                         </div>
                         <div class="row">
-                            <div class="col-md-6"></div>
-                            <div class="col-md-6"></div>
+                            <div class="col-md-6">
+                                <div class="items-list">
+                                    <h2 class="item-number">900</h2>
+                                    <h4 class="item-word">STUDENTS</h4>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="items-list">
+                                    <h2 class="item-number">3675</h2>
+                                    <h4 class="item-word">SATISFIED CLIENT</h4>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -262,9 +323,14 @@
             </div>
         </section>
         <section id="section-webdesigndevcourse">
-            <div class="row">
-                <div class="col-md-12">
-
+            <div class="container">
+                <div class="items-webdesign">
+                    <div class="item-webdesign-title">
+                        <h2>WEB DESIGN & DEVLOPMENT COURSE</h2>
+                        <p>Fusce sem dolor, interdum in efficitur at, faucibus nec lorem.</p>
+                        <hr>
+                    </div>
+                    <a href="#" class="webdesign-button">JOIN NOW</a>
                 </div>
             </div>
         </section>
@@ -321,7 +387,7 @@
         </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="slick/slick.min.js"></script>
     <script src="scripts/main.js"></script>
     <script src="scripts/slickofproject.js"></script>
     <script src="https://kit.fontawesome.com/f28891363d.js"></script>

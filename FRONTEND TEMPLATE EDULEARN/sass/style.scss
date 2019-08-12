@@ -1,4 +1,5 @@
 @import "_variables.scss";
+@import "_mixins.scss";
 // Global
 * {
   box-sizing: border-box !important;
@@ -258,7 +259,7 @@ header {
     z-index: 1;
     top: 0;
     right: 0;
-    background-color: rgba(0,0,0,0.9);
+    background-color: rgba(0, 0, 0, 0.9);
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -281,7 +282,7 @@ header {
       margin-left: 50px;
     }
     .accordion-edulearn {
-      background-color: rgba(0,0,0,0.3);
+      background-color: rgba(0, 0, 0, 0.3);
       color: #fff;
       cursor: pointer;
       padding: 18px;
@@ -292,7 +293,7 @@ header {
       font-size: 15px;
       transition: 0.4s;
       &:after {
-        content: '\2228';
+        content: "\2228";
         color: #fff;
         font-weight: bold;
         float: right;
@@ -304,11 +305,11 @@ header {
     }
     .panel-edulearn {
       padding: 0 18px;
-      background-color: rgba(0,0,0,0.3);
+      background-color: rgba(0, 0, 0, 0.3);
       max-height: 0;
       overflow: hidden;
       transition: max-height 0.2s ease-out;
-      border-bottom: 1px solid rgba(255,255,255,0.15);;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.15);
       p {
         color: #fff;
         font-size: 14px;
@@ -318,12 +319,167 @@ header {
 }
 main {
   #section-aboutus {
+    padding: 30px;
     .item-title {
-      .item-aboutus {
-        font-size: 30px;
-        line-height: 24px;
-        margin-bottom: 15px;
+      text-align: center;
+      h2 {
+        @include h2design;
+        color: #212121;
       }
+      p {
+        @include pdesign;
+      }
+      hr {
+      @include  hrdesign;
+      }
+    }
+    .items-youtube {
+      position: relative;
+      a {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 10;
+        transform: translateX(-50%) translateY(-50%);
+        i {
+          color: $color-red;
+          font-size: 100px;
+        }
+      }
+    }
+    .accordion-aboutus {
+      background-color:#f3f3f3;
+      color: #212121;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+      transition: 0.4s;
+      &:after {
+        content: "\21E8";
+        color: #212121;
+        font-weight: bold;
+        float: right;
+        margin-left: 5px;
+        padding: 5px 11px;
+      }
+    }
+    .activeab {
+        background-color: $color-red;
+        color: #fff;
+      &:after {
+        content: "\21E9";
+        color: #fff;
+      }
+    }
+    .panel-aboutus {
+      padding: 0 18px;
+      background-color:#fff;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+      p {
+        color: #767676;
+        font-size: 14px;
+      }
+    }
+    .items-all {
+      padding: 0 40px;
+    }
+  }
+  #section-acheivements {
+    background-image: url(../images/counter-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center top;
+    padding-bottom: 70px;
+    padding-top: 100px;
+    .items-content {
+      .item-title {
+        color: #fff;
+        font-size: 30px;
+        line-height: 28px;
+        margin-bottom: 28px;
+        font-weight: 700;
+      }
+      .item-text {
+        p {
+          margin-bottom: 35px;
+          color: rgba(255, 255, 255, 0.6);
+        }
+      }
+      .item-image {
+        img {
+          width: 540px;
+          height: 270px;
+          border-radius: 8px;
+        }
+      }
+    }
+    .counterboxes {
+      margin-top: 80px;
+      .items-list {
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        margin-bottom: 30px;
+        text-align: center;
+        padding: 23px;
+        transition: all 0.3;
+        &:hover {
+          border-color: $color-red;
+        }
+        .item-number {
+          font-size: 60px;
+          color: #ffffff;
+          margin-bottom: 6px;
+          font-weight: 700;
+        }
+        .item-word {
+          color: #ffffff;
+          font-weight: 500;
+          margin-bottom: 0;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  #section-webdesigndevcourse {
+    background-image: url(../images/cta-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center top;
+    padding: 100px 0;
+    .items-webdesign {
+      text-align: center;
+    .item-webdesign-title {
+      margin-bottom: 50px;
+      h2 {
+        @include h2design;
+        color: #fff;
+      }
+      p {
+        @include pdesign;
+        color: #fff;
+      }
+      hr {
+        @include hrdesign;
+      }
+    }
+    .webdesign-button {
+      background-color:  #ff3115;
+      padding: 15px 55px;
+      color: #fff;
+      font-weight: 500;
+      line-height: 45px;
+      &:hover {
+        background-color: #E41F05;
+        color: #F5ADA3;
+        transition: 0.5s;
+      }
+    }
     }
   }
 }

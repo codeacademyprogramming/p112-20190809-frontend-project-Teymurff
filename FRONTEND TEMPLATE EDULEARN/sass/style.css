@@ -398,7 +398,7 @@ header .sidenavigationforsass .accordion-edulearn {
 }
 
 header .sidenavigationforsass .accordion-edulearn:after {
-  content: '\2228';
+  content: "\2228";
   color: #fff;
   font-weight: bold;
   float: right;
@@ -423,9 +423,208 @@ header .sidenavigationforsass .panel-edulearn p {
   font-size: 14px;
 }
 
-main #section-aboutus .item-title .item-aboutus {
+main #section-aboutus {
+  padding: 30px;
+}
+
+main #section-aboutus .item-title {
+  text-align: center;
+}
+
+main #section-aboutus .item-title h2 {
   font-size: 30px;
   line-height: 24px;
   margin-bottom: 15px;
+  font-weight: 700;
+  color: #212121;
+}
+
+main #section-aboutus .item-title p {
+  margin-bottom: 0;
+  font-size: 16px;
+}
+
+main #section-aboutus .item-title hr {
+  border: 2px solid #ff3115;
+  width: 10%;
+}
+
+main #section-aboutus .items-youtube {
+  position: relative;
+}
+
+main #section-aboutus .items-youtube a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+}
+
+main #section-aboutus .items-youtube a i {
+  color: #FF3115;
+  font-size: 100px;
+}
+
+main #section-aboutus .accordion-aboutus {
+  background-color: #f3f3f3;
+  color: #212121;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+main #section-aboutus .accordion-aboutus:after {
+  content: "\21E8";
+  color: #212121;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+  padding: 5px 11px;
+}
+
+main #section-aboutus .activeab {
+  background-color: #FF3115;
+  color: #fff;
+}
+
+main #section-aboutus .activeab:after {
+  content: "\21E9";
+  color: #fff;
+}
+
+main #section-aboutus .panel-aboutus {
+  padding: 0 18px;
+  background-color: #fff;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.2s ease-out;
+  transition: max-height 0.2s ease-out;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+main #section-aboutus .panel-aboutus p {
+  color: #767676;
+  font-size: 14px;
+}
+
+main #section-aboutus .items-all {
+  padding: 0 40px;
+}
+
+main #section-acheivements {
+  background-image: url(../images/counter-bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center top;
+  padding-bottom: 70px;
+  padding-top: 100px;
+}
+
+main #section-acheivements .items-content .item-title {
+  color: #fff;
+  font-size: 30px;
+  line-height: 28px;
+  margin-bottom: 28px;
+  font-weight: 700;
+}
+
+main #section-acheivements .items-content .item-text p {
+  margin-bottom: 35px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+main #section-acheivements .items-content .item-image img {
+  width: 540px;
+  height: 270px;
+  border-radius: 8px;
+}
+
+main #section-acheivements .counterboxes {
+  margin-top: 80px;
+}
+
+main #section-acheivements .counterboxes .items-list {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  margin-bottom: 30px;
+  text-align: center;
+  padding: 23px;
+  -webkit-transition: all 0.3;
+  transition: all 0.3;
+}
+
+main #section-acheivements .counterboxes .items-list:hover {
+  border-color: #FF3115;
+}
+
+main #section-acheivements .counterboxes .items-list .item-number {
+  font-size: 60px;
+  color: #ffffff;
+  margin-bottom: 6px;
+  font-weight: 700;
+}
+
+main #section-acheivements .counterboxes .items-list .item-word {
+  color: #ffffff;
+  font-weight: 500;
+  margin-bottom: 0;
+  font-size: 20px;
+}
+
+main #section-webdesigndevcourse {
+  background-image: url(../images/cta-bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center top;
+  padding: 100px 0;
+}
+
+main #section-webdesigndevcourse .items-webdesign {
+  text-align: center;
+}
+
+main #section-webdesigndevcourse .items-webdesign .item-webdesign-title {
+  margin-bottom: 50px;
+}
+
+main #section-webdesigndevcourse .items-webdesign .item-webdesign-title h2 {
+  font-size: 30px;
+  line-height: 24px;
+  margin-bottom: 15px;
+  font-weight: 700;
+  color: #fff;
+}
+
+main #section-webdesigndevcourse .items-webdesign .item-webdesign-title p {
+  margin-bottom: 0;
+  font-size: 16px;
+  color: #fff;
+}
+
+main #section-webdesigndevcourse .items-webdesign .item-webdesign-title hr {
+  border: 2px solid #ff3115;
+  width: 10%;
+}
+
+main #section-webdesigndevcourse .items-webdesign .webdesign-button {
+  background-color: #ff3115;
+  padding: 15px 55px;
+  color: #fff;
+  font-weight: 500;
+  line-height: 45px;
+}
+
+main #section-webdesigndevcourse .items-webdesign .webdesign-button:hover {
+  background-color: #E41F05;
+  color: #F5ADA3;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 /*# sourceMappingURL=style.css.map */

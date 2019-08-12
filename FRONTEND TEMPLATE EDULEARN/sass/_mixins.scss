@@ -1,0 +1,17 @@
+@mixin h2design {
+    font-size: 30px;
+    line-height: 24px;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+@mixin pdesign {
+    margin-bottom: 0;
+    font-size: 16px;
+}
+
+@mixin hrdesign {
+    border: 2px solid #ff3115;
+    width: 10%;
+}
+
