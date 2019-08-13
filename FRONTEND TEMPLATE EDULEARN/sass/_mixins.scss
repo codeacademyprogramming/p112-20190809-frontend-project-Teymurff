@@ -11,7 +11,13 @@
 }
 
 @mixin hrdesign {
-    border: 2px solid #ff3115;
+    border: 2px solid $color-red;
     width: 10%;
 }
 
+@mixin abuttondesign ($padding) {
+    background-color:  $color-red;
+    padding: $padding;
+    color: #fff;
+    font-weight: 500;
+}

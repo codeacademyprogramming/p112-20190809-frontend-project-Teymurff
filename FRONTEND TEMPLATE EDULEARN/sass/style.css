@@ -398,7 +398,8 @@ header .sidenavigationforsass .accordion-edulearn {
 }
 
 header .sidenavigationforsass .accordion-edulearn:after {
-  content: "\2228";
+  content: "\f078";
+  font-family: "Font Awesome 5 Pro";
   color: #fff;
   font-weight: bold;
   float: right;
@@ -445,7 +446,7 @@ main #section-aboutus .item-title p {
 }
 
 main #section-aboutus .item-title hr {
-  border: 2px solid #ff3115;
+  border: 2px solid #FF3115;
   width: 10%;
 }
 
@@ -482,7 +483,8 @@ main #section-aboutus .accordion-aboutus {
 }
 
 main #section-aboutus .accordion-aboutus:after {
-  content: "\21E8";
+  content: "\f0da";
+  font-family: "Font Awesome 5 Pro";
   color: #212121;
   font-weight: bold;
   float: right;
@@ -496,7 +498,8 @@ main #section-aboutus .activeab {
 }
 
 main #section-aboutus .activeab:after {
-  content: "\21E9";
+  content: "\f0d7";
+  font-family: "Font Awesome 5 Pro";
   color: #fff;
 }
 
@@ -609,12 +612,12 @@ main #section-webdesigndevcourse .items-webdesign .item-webdesign-title p {
 }
 
 main #section-webdesigndevcourse .items-webdesign .item-webdesign-title hr {
-  border: 2px solid #ff3115;
+  border: 2px solid #FF3115;
   width: 10%;
 }
 
 main #section-webdesigndevcourse .items-webdesign .webdesign-button {
-  background-color: #ff3115;
+  background-color: #FF3115;
   padding: 15px 55px;
   color: #fff;
   font-weight: 500;
@@ -622,9 +625,161 @@ main #section-webdesigndevcourse .items-webdesign .webdesign-button {
 }
 
 main #section-webdesigndevcourse .items-webdesign .webdesign-button:hover {
-  background-color: #E41F05;
-  color: #F5ADA3;
+  background-color: #e41f05;
+  color: #f5ada3;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+}
+
+main #section-ourlastestnews {
+  padding: 100px 0;
+}
+
+main #section-ourlastestnews .item-title {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+main #section-ourlastestnews .item-title h2 {
+  font-size: 30px;
+  line-height: 24px;
+  margin-bottom: 15px;
+  font-weight: 700;
+  color: #212121;
+}
+
+main #section-ourlastestnews .item-title p {
+  margin-bottom: 0;
+  font-size: 16px;
+  color: #212121;
+}
+
+main #section-ourlastestnews .item-title hr {
+  border: 2px solid #FF3115;
+  width: 10%;
+}
+
+main #section-ourlastestnews .items-news {
+  padding: 15px;
+  border: 1px solid rgba(34, 34, 34, 0.1);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+main #section-ourlastestnews .items-news .item-image {
+  margin-bottom: 20px;
+}
+
+main #section-ourlastestnews .items-news .item-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+main #section-ourlastestnews .items-news .item-date {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+main #section-ourlastestnews .items-news .item-date i {
+  font-size: 15px;
+  font-weight: 500;
+  margin-right: 4px;
+  color: #FF3115;
+}
+
+main #section-ourlastestnews .items-news .item-date span {
+  color: #505050;
+}
+
+main #section-ourlastestnews .items-news .item-title {
+  font-size: 20px;
+  margin-bottom: 12px;
+  font-weight: 700;
+  margin-right: 51px;
+}
+
+main #section-ourlastestnews .items-news .item-title a {
+  color: #212121;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+main #section-ourlastestnews .items-news .item-title a:hover {
+  color: #FF3115;
+}
+
+main #section-ourlastestnews .items-news .item-text {
+  margin-bottom: 20px;
+}
+
+main #section-ourlastestnews .items-news .item-button a {
+  background-color: #FF3115;
+  padding: 9px 16px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+main #section-ourlastestnews .items-list {
+  overflow: hidden;
+}
+
+main #section-ourlastestnews .items-list .item-newslist {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  padding: 15px;
+  border: 1px solid rgba(34, 34, 34, 0.1);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+main #section-ourlastestnews .items-list .item-newslist .item-image img {
+  width: 154.33px;
+  height: 115.73px;
+}
+
+main #section-ourlastestnews .items-list .item-newslist .item-content {
+  margin-left: 15px;
+}
+
+main #section-ourlastestnews .items-list .item-newslist .item-content .item-contenttitle {
+  font-size: 16px;
+  margin-bottom: 7px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+main #section-ourlastestnews .items-list .item-newslist .item-content .item-contenttitle a {
+  color: #212121;
+}
+
+main #section-ourlastestnews .items-list .item-newslist .item-content .item-contentdate {
+  font-size: 14px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+main #section-ourlastestnews .items-list .item-newslist .item-content .item-contentdate i {
+  font-size: 15px;
+  margin-right: 4px;
+  color: #FF3115;
+}
+
+main #section-ourlastestnews .items-list .item-newslist .item-content .item-contentdate span {
+  color: #505050;
+}
+
+main #section-ourlastestnews .items-list .item-newslist .item-content .item-contenttext {
+  color: #505050;
+  vertical-align: baseline;
+  line-height: 26px;
+  font-weight: 400;
+}
+
+main #section-ourlastestnews .items-list .item-newslist .item-content .item-contenttext p {
+  margin-bottom: 0;
 }
 /*# sourceMappingURL=style.css.map */
