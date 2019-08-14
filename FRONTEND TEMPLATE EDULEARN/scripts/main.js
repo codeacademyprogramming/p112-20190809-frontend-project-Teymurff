@@ -6,6 +6,73 @@ $(document).ready(function () {
     $(".closesidenav").click(function () {
         $("#sidenavigation").width("0");
     }); 
+
+  
+    $('.carousel-getstarted').owlCarousel({
+      autoplay: true,
+      loop:true,
+      margin:10,
+      nav:true,
+      responsive:{
+          0:{
+              items:1
+          },
+          600:{
+              items:3
+          },
+          1000:{
+              items:1
+          }
+      }
+      })
+
+      $('.main-content .carousel-upcoming').owlCarousel({
+        autoplay: false,
+        loop:true,
+        margin:10,
+        nav:true,
+        navText: [
+          '<i class="fal fa-angle-left"></i>',
+          '<i class="fal fa-angle-right"></i>'
+      ],
+      navContainer: '.main-content .custom-nav',
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:3
+            }
+        }
+        })
+
+        $('.item-number').each(function() {
+          var $this = $(this),
+              countTo = $this.attr('data-count');
+          
+          $({ countNum: $this.text()}).animate({
+            countNum: countTo
+          },
+        
+          {
+        
+            duration: 3000,
+            easing:'linear',
+            step: function() {
+              $this.text(Math.floor(this.countNum));
+            },
+            complete: function() {
+              $this.text(this.countNum);
+            }
+        
+          });  
+          
+          
+        
+        });
 });
 
 let acc = document.getElementsByClassName("accordion-edulearn");

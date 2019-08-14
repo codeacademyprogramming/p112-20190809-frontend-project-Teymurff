@@ -8,8 +8,8 @@
     <title>EDULEARN</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="slick/slick.css" />
-    <link rel="stylesheet" href="slick/slick-theme.css" />
+    <link rel="stylesheet" href="owlcarousel/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="sass/style.css">
 </head>
 
@@ -187,10 +187,10 @@
     </header>
     <main>
         <section id="section-getstarted">
-            <div class="autoplay">
-                <div><img src="images/slide1.jpg" alt="image" width="1349" height="576.13"></div>
-                <div><img src="images/slide2.jpg" alt="image2" width="1349" height="576.13"></div>
-                <div><img src="images/slide3.jpg" alt="image3" width="1349" height="576.13"></div>
+            <div class="owl-carousel owl-theme carousel-getstarted">
+                <div> <img src="images/slide1.jpg" alt="image"></div>
+                <div><img src="images/slide2.jpg" alt="image2"></div>
+                <div><img src="images/slide3.jpg" alt="image3"></div>
             </div>
         </section>
         <section id="section-services">
@@ -273,13 +273,13 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="items-list">
-                                    <h2 class="item-number">60</h2>
+                                    <h2 class="item-number" data-count="60">0</h2>
                                     <h4 class="item-word">TEACHERS</h4>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="items-list">
-                                    <h2 class="item-number">40</h2>
+                                    <h2 class="item-number" data-count="40">0</h2>
                                     <h4 class="item-word">COURSES</h4>
                                 </div>
                             </div>
@@ -287,13 +287,13 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="items-list">
-                                    <h2 class="item-number">900</h2>
+                                    <h2 class="item-number" data-count="900">0</h2>
                                     <h4 class="item-word">STUDENTS</h4>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="items-list">
-                                    <h2 class="item-number">3675</h2>
+                                    <h2 class="item-number" data-count="3675">0</h2>
                                     <h4 class="item-word">SATISFIED CLIENT</h4>
                                 </div>
                             </div>
@@ -302,15 +302,124 @@
                 </div>
             </div>
         </section>
-        <section id="section-upcomingevents">
+        <section id="section-ourupcomingevents">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-12"> </div>
+                <div class="item-title">
+                    <h2>OUR UPCOMING EVENTS</h2>
+                    <p>I feel the presence of the Almighty, who formed us in his own image, and the breath.</p>
+                    <hr>
                 </div>
                 <div class="row">
-                    <div class="col-md-4"></div>
-                    <div class="col-md-4"></div>
-                    <div class="col-md-4"></div>
+                    <div class="col-md-12">
+                        <div class="main-content">
+                        <div class="owl-carousel owl-theme carousel-upcoming">
+                            <div class="items-upcomingevent">
+                                <div class="item-image">
+                                    <img src="images/1upcoming.jpg" alt="upcoming">
+                                    <a href="#" title="University Tour 2018">
+                                        <i class="fad fa-link"></i>
+                                    </a>
+                                </div>
+                                <div class="items-details">
+                                    <div class="item-dateupcoming">
+                                        <i class="fad fa-calendar-alt"></i>
+                                        <span>28 June 2017</span>
+                                    </div>
+                                    <h4 class="item-titleupcoming">
+                                        <a href="#">PRACTICE WORKSHOP 2018</a>
+                                    </h4>
+                                    <div class="item-timelocationupcoming">
+                                        <div class="item-time">
+                                            <i class="fal fa-clock"></i>
+                                            <span>12.30AM-05.30PM</span>
+                                        </div>
+                                        <div class="item-location">
+                                            <i class="fad fa-map-marker-alt"></i>
+                                            <span>Venue A, Main Campus</span>
+                                        </div>
+                                    </div>
+                                    <div class="item-buttonupcoming">
+                                        <a href="#">
+                                            Join Event
+                                            <i class="fas fa-angle-double-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="items-upcomingevent">
+                                <div class="item-image">
+                                    <img src="images/2upcoming.jpg" alt="upcoming">
+                                    <a href="#" title="University Tour 2018">
+                                        <i class="fad fa-link"></i>
+                                    </a>
+                                </div>
+                                <div class="items-details">
+                                    <div class="item-dateupcoming">
+                                        <i class="fad fa-calendar-alt"></i>
+                                        <span>28 June 2017</span>
+                                    </div>
+                                    <h4 class="item-titleupcoming">
+                                        <a href="#">CAMPUS EXAMINATION ROOM</a>
+                                    </h4>
+                                    <div class="item-timelocationupcoming">
+                                        <div class="item-time">
+                                            <i class="fal fa-clock"></i>
+                                            <span>12.30AM-05.30PM</span>
+                                        </div>
+                                        <div class="item-location">
+                                            <i class="fad fa-map-marker-alt"></i>
+                                            <span>Venue A, Main Campus</span>
+                                        </div>
+                                    </div>
+                                    <div class="item-buttonupcoming">
+                                        <a href="#">
+                                            Join Event
+                                            <i class="fas fa-angle-double-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="items-upcomingevent">
+                                <div class="item-image">
+                                    <img src="images/3upcoming.jpg" alt="upcoming">
+                                    <a href="#" title="University Tour 2018">
+                                        <i class="fad fa-link"></i>
+                                    </a>
+                                </div>
+                                <div class="items-details">
+                                    <div class="item-dateupcoming">
+                                        <i class="fad fa-calendar-alt"></i>
+                                        <span>28 June 2017</span>
+                                    </div>
+                                    <h4 class="item-titleupcoming">
+                                        <a href="#">BEST GRADUATION CEREMONY</a>
+                                    </h4>
+                                    <div class="item-timelocationupcoming">
+                                        <div class="item-time">
+                                            <i class="fal fa-clock"></i>
+                                            <span>12.30AM-05.30PM</span>
+                                        </div>
+                                        <div class="item-location">
+                                            <i class="fad fa-map-marker-alt"></i>
+                                            <span>Venue A, Main Campus</span>
+                                        </div>
+                                    </div>
+                                    <div class="item-buttonupcoming">
+                                        <a href="#">
+                                            Join Event
+                                            <i class="fas fa-angle-double-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="owl-theme">
+                        <div class="owl-controls">
+                                <div class="custom-nav owl-nav"></div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -399,7 +508,7 @@
                                 <div class="item-content">
                                     <h5 class="item-contenttitle">
                                         <a href="#">
-                                                I must explain to you how all this idea</a>
+                                            I must explain to you how all this idea</a>
                                     </h5>
                                     <div class="item-contentdate">
                                         <i class="far fa-calendar-check"></i>
@@ -422,7 +531,7 @@
                                 <div class="item-content">
                                     <h5 class="item-contenttitle">
                                         <a href="#">
-                                                I should be incapable of drawing a stroke</a>
+                                            I should be incapable of drawing a stroke</a>
                                     </h5>
                                     <div class="item-contentdate">
                                         <i class="far fa-calendar-check"></i>
@@ -483,9 +592,8 @@
         </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <script src="slick/slick.min.js"></script>
+    <script src="owlcarousel/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
     <script src="scripts/main.js"></script>
-    <script src="scripts/slickofproject.js"></script>
     <script src="https://kit.fontawesome.com/f28891363d.js"></script>
     <script src="scripts/fontawesome.js"></script>
 </body>
