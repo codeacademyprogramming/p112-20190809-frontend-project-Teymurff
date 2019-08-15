@@ -29,7 +29,7 @@ $(document).ready(function () {
       $('.main-content .carousel-upcoming').owlCarousel({
         autoplay: false,
         loop:true,
-        margin:10,
+        margin:30,
         nav:true,
         navText: [
           '<i class="fal fa-angle-left"></i>',
@@ -48,6 +48,29 @@ $(document).ready(function () {
             }
         }
         })
+
+        $('.main-contentpopular .carousel-popular').owlCarousel({
+          autoplay: false,
+          loop:true,
+          margin:30,
+          nav:true,
+          navText: [
+            '<i class="fal fa-angle-left"></i>',
+            '<i class="fal fa-angle-right"></i>'
+        ],
+        navContainer: '.main-contentpopular .custom-nav2',
+          responsive:{
+              0:{
+                  items:1
+              },
+              600:{
+                  items:3
+              },
+              1000:{
+                  items:3
+              }
+          }
+          })
 
         $('.item-number').each(function() {
           var $this = $(this),
@@ -73,7 +96,29 @@ $(document).ready(function () {
           
         
         });
+
+        $('.carousel-emblems').owlCarousel({
+          autoplay: true,
+          loop:true,
+          margin:30,
+          nav:true,
+          responsive:{
+              0:{
+                  items:1
+              },
+              600:{
+                  items:3
+              },
+              1000:{
+                  items:5
+              }
+          }
+          })
+
+       
 });
+
+
 
 let acc = document.getElementsByClassName("accordion-edulearn");
 let i;

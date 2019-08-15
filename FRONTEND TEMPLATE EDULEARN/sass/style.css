@@ -424,6 +424,60 @@ header .sidenavigationforsass .panel-edulearn p {
   font-size: 14px;
 }
 
+main #section-services .item-main {
+  background-color: #212121;
+  padding: 25px 17px 17px;
+  -webkit-box-shadow: 0 4px 2px -2px #000000;
+          box-shadow: 0 4px 2px -2px #000000;
+  z-index: 111;
+  position: relative;
+  top: -95px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+main #section-services .item-main:hover, main #section-services .item-main:hover .item-services {
+  background-color: #FF3115;
+  color: #fff;
+}
+
+main #section-services .item-main .item-services {
+  height: 130px;
+  width: 130px;
+  background-color: #212121;
+  line-height: 88px;
+  text-align: center;
+  position: absolute;
+  top: -50px;
+  z-index: -1;
+  font-size: 40px;
+  border-radius: 50%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  color: #FF3115;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+main #section-services .item-main .item-text {
+  text-align: center;
+  margin-top: 6px;
+}
+
+main #section-services .item-main .item-text .item-title {
+  position: relative;
+  color: #ffffff;
+  font-size: 20px;
+  margin-bottom: 7px;
+  z-index: 10;
+}
+
+main #section-services .item-main .item-text p {
+  color: #cccccc;
+  margin-bottom: 0;
+}
+
 main #section-aboutus {
   padding: 30px;
 }
@@ -443,6 +497,7 @@ main #section-aboutus .item-title h2 {
 main #section-aboutus .item-title p {
   margin-bottom: 0;
   font-size: 16px;
+  color: #505050;
 }
 
 main #section-aboutus .item-title hr {
@@ -520,6 +575,245 @@ main #section-aboutus .panel-aboutus p {
 
 main #section-aboutus .items-all {
   padding: 0 40px;
+}
+
+main #section-ourpopularcourses {
+  padding: 100px 0;
+  background-color: #F9F9F9;
+}
+
+main #section-ourpopularcourses .items-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+main #section-ourpopularcourses .items-title h2 {
+  font-size: 30px;
+  line-height: 24px;
+  margin-bottom: 15px;
+  font-weight: 700;
+  color: #212121;
+}
+
+main #section-ourpopularcourses .items-title p {
+  margin-bottom: 0;
+  font-size: 16px;
+  color: #505050;
+}
+
+main #section-ourpopularcourses .items-title hr {
+  border: 2px solid #FF3115;
+  width: 10%;
+}
+
+main #section-ourpopularcourses .main-contentpopular {
+  position: relative;
+}
+
+main #section-ourpopularcourses .main-contentpopular .carousel-popular .itemsmain-popularcourses {
+  border: none;
+  background: #fff;
+}
+
+main #section-ourpopularcourses .main-contentpopular .carousel-popular .itemsmain-popularcourses .itemssub-imagepopular {
+  position: relative;
+  margin-bottom: 22px;
+}
+
+main #section-ourpopularcourses .main-contentpopular .carousel-popular .itemsmain-popularcourses .itemssub-imagepopular img {
+  height: auto;
+  max-width: 100%;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+main #section-ourpopularcourses .main-contentpopular .carousel-popular .itemsmain-popularcourses .itemssub-imagepopular .alink {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #FF3115;
+  z-index: 11;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+main #section-ourpopularcourses .main-contentpopular .carousel-popular .itemsmain-popularcourses .itemssub-imagepopular i {
+  font-size: 22px;
+  font-weight: 400;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+main #section-ourpopularcourses .main-contentpopular .carousel-popular .itemsmain-popularcourses .itemssub-imagepopular .spanprice {
+  position: absolute;
+  bottom: -25px;
+  right: 25px;
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  text-align: center;
+  background-color: #FF3115;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+main #section-ourpopularcourses .main-contentpopular .carousel-popular .itemsmain-popularcourses .itemssub-bodypopular {
+  text-align: center;
+  padding: 0 20px;
+}
+
+main #section-ourpopularcourses .main-contentpopular .carousel-popular .itemsmain-popularcourses .itemssub-bodypopular .acategory {
+  color: #FF3115;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+main #section-ourpopularcourses .main-contentpopular .carousel-popular .itemsmain-popularcourses .itemssub-bodypopular .item-title {
+  font-size: 20px;
+  margin-bottom: 7px;
+  font-weight: 700;
+}
+
+main #section-ourpopularcourses .main-contentpopular .carousel-popular .itemsmain-popularcourses .itemssub-bodypopular .item-title a {
+  color: #212121;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+main #section-ourpopularcourses .main-contentpopular .carousel-popular .itemsmain-popularcourses .itemssub-bodypopular .item-title a:hover {
+  color: #a3a3a3;
+}
+
+main #section-ourpopularcourses .main-contentpopular .carousel-popular .itemsmain-popularcourses .itemssub-bodypopular .item-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 15px;
+}
+
+main #section-ourpopularcourses .main-contentpopular .carousel-popular .itemsmain-popularcourses .itemssub-bodypopular .item-wrap .item-stars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: outside none none;
+  margin: 0;
+  padding: 0;
+  margin-right: 10px;
+  padding-right: 10px;
+  border-right: 1px solid #ddd;
+  line-height: 10px;
+  color: #FF3115;
+  font-size: 14px;
+}
+
+main #section-ourpopularcourses .main-contentpopular .carousel-popular .itemsmain-popularcourses .itemssub-bodypopular .item-wrap .item-review {
+  line-height: 10px;
+  margin-top: 4px;
+  color: #505050;
+}
+
+main #section-ourpopularcourses .main-contentpopular .carousel-popular .itemsmain-popularcourses .itemssub-bodypopular .item-text {
+  margin-top: 10px;
+  color: #505050;
+}
+
+main #section-ourpopularcourses .main-contentpopular .carousel-popular .itemsmain-popularcourses .itemssub-bodypopular .item-text p {
+  margin-bottom: 22px;
+}
+
+main #section-ourpopularcourses .main-contentpopular .carousel-popular .itemsmain-popularcourses .itemssub-footerpopular {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px 20px;
+  background-color: #f0f0f0;
+  text-align: center;
+}
+
+main #section-ourpopularcourses .main-contentpopular .carousel-popular .itemsmain-popularcourses .itemssub-footerpopular > div {
+  position: relative;
+  text-align: center;
+  line-height: 19px;
+}
+
+main #section-ourpopularcourses .main-contentpopular .carousel-popular .itemsmain-popularcourses .itemssub-footerpopular > div + div {
+  padding-left: 8px;
+  margin-left: 8px;
+  border-left: 1px solid #ccc;
+}
+
+main #section-ourpopularcourses .main-contentpopular .carousel-popular .itemsmain-popularcourses .itemssub-footerpopular > div span.item-label {
+  font-weight: 700;
+}
+
+main #section-ourpopularcourses .main-contentpopular .carousel-popular .itemsmain-popularcourses .itemssub-footerpopular > div span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 14px;
+  color: #212121;
+}
+
+main #section-ourpopularcourses .main-contentpopular .owl-theme .custom-nav2 {
+  position: absolute;
+  top: 20%;
+  left: 0;
+  right: 0;
+}
+
+main #section-ourpopularcourses .main-contentpopular .owl-theme .custom-nav2 .owl-prev,
+main #section-ourpopularcourses .main-contentpopular .owl-theme .custom-nav2 .owl-next {
+  position: absolute;
+  border: none;
+  background: none;
+}
+
+main #section-ourpopularcourses .main-contentpopular .owl-theme .custom-nav2 .owl-prev i,
+main #section-ourpopularcourses .main-contentpopular .owl-theme .custom-nav2 .owl-next i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.4rem;
+  color: #fff;
+  height: 42px;
+  width: 42px;
+  background-color: #505050;
+  border-radius: 50%;
+  z-index: 100;
+}
+
+main #section-ourpopularcourses .main-contentpopular .owl-theme .custom-nav2 .owl-prev:focus,
+main #section-ourpopularcourses .main-contentpopular .owl-theme .custom-nav2 .owl-next:focus {
+  outline: none;
+}
+
+main #section-ourpopularcourses .main-contentpopular .owl-theme .custom-nav2 .owl-prev {
+  left: -4rem;
+}
+
+main #section-ourpopularcourses .main-contentpopular .owl-theme .custom-nav2 .owl-next {
+  right: -4rem;
 }
 
 main #section-acheivements {
@@ -601,6 +895,7 @@ main #section-ourupcomingevents .item-title h2 {
 main #section-ourupcomingevents .item-title p {
   margin-bottom: 0;
   font-size: 16px;
+  color: #505050;
 }
 
 main #section-ourupcomingevents .item-title hr {
@@ -776,6 +1071,7 @@ main #section-webdesigndevcourse .items-webdesign .item-webdesign-title h2 {
 main #section-webdesigndevcourse .items-webdesign .item-webdesign-title p {
   margin-bottom: 0;
   font-size: 16px;
+  color: #505050;
   color: #fff;
 }
 
@@ -819,6 +1115,7 @@ main #section-ourlastestnews .item-title h2 {
 main #section-ourlastestnews .item-title p {
   margin-bottom: 0;
   font-size: 16px;
+  color: #505050;
   color: #212121;
 }
 
@@ -949,5 +1246,10 @@ main #section-ourlastestnews .items-list .item-newslist .item-content .item-cont
 
 main #section-ourlastestnews .items-list .item-newslist .item-content .item-contenttext p {
   margin-bottom: 0;
+}
+
+main #section-emblems .item-emblem img {
+  width: 158px;
+  height: 167px;
 }
 /*# sourceMappingURL=style.css.map */
