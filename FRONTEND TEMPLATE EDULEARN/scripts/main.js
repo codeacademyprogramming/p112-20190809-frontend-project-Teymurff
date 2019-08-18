@@ -12,7 +12,8 @@ $(document).ready(function () {
     autoplay: true,
     loop: true,
     margin: 10,
-    nav: true,
+    nav: false,
+    dots: false,
     responsive: {
       0: {
         items: 1
@@ -101,10 +102,11 @@ $(document).ready(function () {
     autoplay: true,
     loop: true,
     margin: 30,
-    nav: true,
+    nav: false,
+    dots: false,
     responsive: {
       0: {
-        items: 1
+        items: 3
       },
       600: {
         items: 3
@@ -116,28 +118,7 @@ $(document).ready(function () {
   })
 
 
-  $('.main-contentexperienced .carousel-experienced').owlCarousel({
-    autoplay: false,
-    loop: true,
-    margin: 30,
-    nav: true,
-    navText: [
-      '<i class="fal fa-angle-left"></i>',
-      '<i class="fal fa-angle-right"></i>'
-    ],
-    navContainer: '.main-contentexperienced .custom-nav3',
-    responsive: {
-      0: {
-        items: 1
-      },
-      600: {
-        items: 3
-      },
-      1000: {
-        items: 3
-      }
-    }
-  })
+
 
   $('.main-contentpublications .carousel-publications').owlCarousel({
     autoplay: false,
@@ -163,7 +144,7 @@ $(document).ready(function () {
   })
 
   $('.main-contentwhat .carousel-what').owlCarousel({
-    autoplay: false,
+    autoplay: true,
     loop: true,
     margin: 30,
     nav: true,
@@ -185,11 +166,43 @@ $(document).ready(function () {
     }
   })
 
-
+  $('.contentexpert .sliderex').owlCarousel({
+    autoplay: false,
+    loop: true,
+    margin: 30,
+    nav: true,
+    navText: [
+      '<i class="fal fa-angle-left"></i>',
+      '<i class="fal fa-angle-right"></i>'
+    ],
+    navContainer: '.contentexpert .custom-nav3',
+    responsive: {
+      0: {
+        items: 1
+      },
+      600: {
+        items: 3
+      },
+      1000: {
+        items: 3
+      }
+    }
+  })
 
 });
 
+window.onscroll = changePos;
 
+function changePos() {
+    var header = document.getElementById("nav-main");
+    if (window.pageYOffset > 70) {
+        header.style.position = "absolute";
+        header.style.top = pageYOffset + "px";
+    } else {
+        header.style.position = "";
+        header.style.top = "";
+    }
+}
 
 
 let acc = document.getElementsByClassName("accordion-edulearn");
